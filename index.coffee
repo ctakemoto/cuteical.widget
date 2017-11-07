@@ -6,7 +6,7 @@
 
 options =
   widgetEnable: true      # To enable the widget, set value to true. To disable, false.
-  theme: 'pastel'         #theme options: 'pastel', 'dark', or 'bright'
+  theme: 'dark'         #theme options: 'pastel', 'dark', or 'bright'
 
 
 #This command shows all of your events for today and tomorrow
@@ -60,16 +60,19 @@ style: """
     color2 = pastel_pink
     color3 = pastel_yellow
     color4 = pastel_green
+    text-color = #fff
   else if #{options.theme} == dark
     color1 = dark_purple
     color2 = dark_pink
     color3 = dark_yellow
     color4 = dark_green
+    text-color = #000
   else
     color1 = bright_purple
     color2 = bright_pink
     color3 = bright_yellow
     color4 = bright_green
+    text-color = #fff
 
   
   div
@@ -77,7 +80,7 @@ style: """
     font-size: 20px
     font-weight: 200
     display: block
-    color: rgba(255,255,255,1)
+    color: text-color
     width: 320px
 
   .wrapper
