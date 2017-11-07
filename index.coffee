@@ -5,8 +5,8 @@
 
 
 options =
-  # To enable the widget, set value to true. To disable, false.
-  widgetEnable: true
+  widgetEnable: true      # To enable the widget, set value to true. To disable, false.
+  theme: 'pastel'         #theme options: 'pastel', 'dark', or 'bright'
 
 
 #This command shows all of your events for today and tomorrow
@@ -39,6 +39,37 @@ style: """
   font-family: Helvetica Neue
   left: 25px
   top: 20px
+
+  pastel_purple = #ccb5fc
+  pastel_pink = #f4bdf7
+  pastel_yellow = #fff49b
+  pastel_green = #a0f2a4
+
+  dark_purple = #250333
+  dark_pink = #400122
+  dark_yellow = #4A4104
+  dark_green = #044A0B
+
+  bright_purple = #830CF0
+  bright_pink = #FA0C65
+  bright_yellow = #CEFA0C
+  bright_green = #28B200
+
+  if #{options.theme} == pastel
+    color1 = pastel_purple
+    color2 = pastel_pink
+    color3 = pastel_yellow
+    color4 = pastel_green
+  else if #{options.theme} == dark
+    color1 = dark_purple
+    color2 = dark_pink
+    color3 = dark_yellow
+    color4 = dark_green
+  else
+    color1 = bright_purple
+    color2 = bright_pink
+    color3 = bright_yellow
+    color4 = bright_green
 
   
   div
@@ -74,18 +105,18 @@ style: """
 
   .square
     font-size: 26px
-    color: rgba(204,181,252, 1)
+    color: color1
 
   .heart
     font-size: 13px
-    color: rgba(244,189,247, 1)
-
-  .circle
-    font-size: 25px
-    color: rgba(160,242,164, 1)
+    color: color2
 
   .triangle
     font-size: 13px
-    color: rgba(255,244,155, 1)
+    color: color3
+
+  .circle
+    font-size: 25px
+    color: color4
 
 """
