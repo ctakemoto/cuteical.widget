@@ -1,6 +1,6 @@
 # Cute iCal Widget
 
-An [Übersicht](http://tracesof.net/uebersicht/) widget that displays events from iCal onto your desktop with a set of cute and colorful bullet points. Features three different themes: pastel, bright, and dark.
+An [Übersicht](http://tracesof.net/uebersicht/) widget that displays events from iCal onto your desktop with a set of cute and colorful bullet points. 
 
 Utilizing [icalBuddy](http://hasseg.org/icalBuddy/).
 
