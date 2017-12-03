@@ -5,7 +5,7 @@ An [Übersicht](http://tracesof.net/uebersicht/) widget that displays events fro
 Utilizing [icalBuddy](http://hasseg.org/icalBuddy/).
 
 *Screen Shot showing the pastel theme*
-![Example Screenshot of widget](Screen_Shot.png)
+![Example Screenshot of widget](screenshot.png)
 
 ## Requirements
 
