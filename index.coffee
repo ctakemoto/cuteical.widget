@@ -6,8 +6,8 @@
 
 options =
   widgetEnable: true      # To enable the widget, set value to true. To disable, false.
-  theme: 'bright'         #theme options: 'pastel', 'dark', or 'bright'
-  textColor: 'black'      # Color options: 'default' / html colors or values: 'black', 'white', '#000' etc
+  theme: 'bright'         # Theme options: 'pastel', 'dark', or 'bright'
+  textColor: 'default'    # Color options: 'default' / html colors or values: 'black', 'white', '#000' etc
 
 
 #This command shows all of your events for today and tomorrow
