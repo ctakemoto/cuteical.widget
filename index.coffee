@@ -6,7 +6,8 @@
 
 options =
   widgetEnable: true      # To enable the widget, set value to true. To disable, false.
-  theme: 'dark'         #theme options: 'pastel', 'dark', or 'bright'
+  theme: 'bright'         #theme options: 'pastel', 'dark', or 'bright'
+  textColor: 'black'      # Color options: 'default' / html colors or values: 'black', 'white', '#000' etc
 
 
 #This command shows all of your events for today and tomorrow
@@ -50,29 +51,38 @@ style: """
   dark_yellow = #4A4104
   dark_green = #044A0B
 
-  bright_purple = #830CF0
-  bright_pink = #FA0C65
-  bright_yellow = #CEFA0C
-  bright_green = #28B200
+  bright_purple = rgb(138, 116, 176)
+  bright_pink = rgb(217,76,150)
+  bright_yellow = rgb(239,199,44)
+  bright_green = rgb(103,185,63)
 
   if #{options.theme} == pastel
     color1 = pastel_purple
     color2 = pastel_pink
     color3 = pastel_yellow
     color4 = pastel_green
-    text-color = #fff
+    if #{options.textColor} == default
+      text-color = #fff
+    else
+      text-color = #{options.textColor}
   else if #{options.theme} == dark
     color1 = dark_purple
     color2 = dark_pink
     color3 = dark_yellow
     color4 = dark_green
-    text-color = #000
+    if #{options.textColor} == default
+      text-color = #000
+    else
+      text-color = #{options.textColor}
   else
     color1 = bright_purple
     color2 = bright_pink
     color3 = bright_yellow
     color4 = bright_green
-    text-color = #fff
+    if #{options.textColor} == default
+      text-color = #fff
+    else
+      text-color = #{options.textColor}
 
   
   div
@@ -81,7 +91,7 @@ style: """
     font-weight: 200
     display: block
     color: text-color
-    width: 320px
+    width: 330px
 
   .wrapper
     xxwidth:100%
