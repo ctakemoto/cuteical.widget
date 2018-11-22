@@ -11,13 +11,13 @@ def prettify_calendar():
 
 	#remove error from icalbuddy and get calendar info for today
 	with open(os.devnull, 'w') as devnull:
-		raw_events = subprocess.check_output(["./ical.widget/icalBuddy","sudo","-nrd","-nc","-b", "❤︎ ","-eep","location,url,notes,attendees" , "eventsToday"], stderr=devnull)
+		raw_events = subprocess.check_output(["./cuteical.widget/icalBuddy","sudo","-nrd","-nc","-b", "❤︎ ","-eep","location,url,notes,attendees" , "eventsToday"], stderr=devnull)
 
 	html, bullet_counter = display_events(html, "Today", raw_events, bullets, bullet_counter)
 
 	#remove error from icalbuddy and get calendar info for tomorrow
 	with open(os.devnull, 'w') as devnull:
-		raw_events = subprocess.check_output(["./ical.widget/icalBuddy","sudo","-nrd","-nc","-b", "❤︎ ","-eep","location,url,notes,attendees", "eventsFrom:today+1","to:today+1"], stderr=devnull)
+		raw_events = subprocess.check_output(["./cuteical.widget/icalBuddy","sudo","-nrd","-nc","-b", "❤︎ ","-eep","location,url,notes,attendees", "eventsFrom:today+1","to:today+1"], stderr=devnull)
 
 	html, bullet_counter = display_events(html, "Tomorrow", raw_events, bullets, bullet_counter)
 

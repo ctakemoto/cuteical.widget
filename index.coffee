@@ -7,12 +7,12 @@
 options =
   widgetEnable: true      # To enable the widget, set value to true. To disable, false.
   theme: 'bright'         # Theme options: 'pastel', 'dark', or 'bright'
-  textColor: 'default'    # Color options: 'default' / html colors or values: 'black', 'white', '#000' etc
+  textColor: 'black'      # Color options: 'default' / html colors or values: 'black', 'white', '#000' etc
 
 
 #This command shows all of your events for today and tomorrow
 
-command: "python ical.widget/calendar_events_txtbullets.py"
+command: "python cuteical.widget/calendar_events_txtbullets.py"
 
 
 # the refresh frequency s is seconds and m is minutes
