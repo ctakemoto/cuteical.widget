@@ -1,6 +1,7 @@
 # Get calendar events on your desktop with cute bullets 
 # Made by Cara Takemoto
 # Using icalBuddy: http://hasseg.org/icalBuddy/
+# Updated icalBuddy with Catalina support from: https://github.com/DavidKaluta/icalBuddy64/releases
 # Requires Python 2.7 
 
 
